@@ -1,0 +1,33 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+    <div class="container mx-auto px-4 py-8 flex-1">
+        <div class="flex">
+            <aside class="w-64 mr-8 hidden lg:block">
+                <h2 class="text-2xl font-bold mb-4">Filter</h2>
+                <ul>
+                    <li><a href="#" class="block py-2 px-4 hover:bg-gray-100">Filter Option 1</a></li>
+                    <li><a href="#" class="block py-2 px-4 hover:bg-gray-100">Filter Option 2</a></li>
+                    <li><a href="#" class="block py-2 px-4 hover:bg-gray-100">Filter Option 3</a></li>
+                    <!-- Add more filter options as needed -->
+                </ul>
+            </aside>
+            <main class="flex-1">
+                <h2 class="text-2xl font-bold mb-4">Highlighted Items</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <!-- Repeat this block for each highlighted item -->
+                    <div class="bg-white shadow-md rounded-lg overflow-hidden">
+                        <img src="https://via.placeholder.com/150" alt="Product Image" class="w-full h-48 object-cover">
+                        <div class="p-4">
+                            <h3 class="text-lg font-semibold">Product Name</h3>
+                            <p class="mt-2 text-gray-600">$Price</p>
+                            <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded">Add to Cart</button>
+                        </div>
+                    </div>
+                    <!-- Repeat block ends -->
+                </div>
+            </main>
+        </div>
+    </div>
+</div>
+{% endblock %}
