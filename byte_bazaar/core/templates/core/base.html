@@ -11,7 +11,7 @@
         <div class="container mx-auto px-4 py-2 flex justify-between items-center">
             <div class="flex items-center space-x-4">
                 <a href="{% url 'homepage' %}" class="text-xl font-bold">Byte Bazaar</a>
-                <a href="#" class="hover:text-gray-600">Categories</a>
+                <a href="{% url "product:shop" %}" class="hover:text-gray-600">Shop</a>
                 <a href="{% url "contacts" %}" class="hover:text-gray-600">Contacts</a>
                 <a href="{% url "about" %}" class="hover:text-gray-600">About</a>
             </div>
@@ -35,8 +35,8 @@
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="text-gray-600">&copy; 2024 Byte Bazaar. All rights reserved.</div>
             <div class="flex space-x-4">
-                <a href="#" class="text-gray-600 hover:text-gray-800">Contacts</a>
-                <a href="#" class="text-gray-600 hover:text-gray-800">About</a>
+                <a href="{% url "contacts" %}" class="text-gray-600 hover:text-gray-800">Contacts</a>
+                <a href="{% url "about" %}" class="text-gray-600 hover:text-gray-800">About</a>
             </div>
         </div>
     </footer>
