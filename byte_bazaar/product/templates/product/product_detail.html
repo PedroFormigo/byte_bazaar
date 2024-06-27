@@ -1,0 +1,5 @@
+{% extends "core/base.html" %}
+{% block content %}
+    <img src="{{ product.image.url }}" alt="{{ product.name }}" class="w-full h-48 object-cover">
+    <h1>{{ product.name }}</h1>
+{% endblock %}
