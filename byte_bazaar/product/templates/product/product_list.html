@@ -5,7 +5,7 @@
     <h1 class="text-2xl font-bold mb-4">Products in {{ category.name }}</h1>
     <div class="grid grid-cols-3 gap-4">
         {% for product in products %}
-        <a href="{% url "product:product_detail" category.slug product.pk %}" class="border p-4 rounded">
+        <a href="{% url "product:product_detail" category.slug product.slug %}" class="border p-4 rounded">
             <img src="{{ product.get_thumbnail }}" class="w-full h-48 object-cover">
             <h3 class="text-xl font-bold">{{ product.name }}</h3>
             <p class="content-end">{{ product.get_display_price }}</p>

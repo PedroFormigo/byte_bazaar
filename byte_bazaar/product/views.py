@@ -26,5 +26,5 @@ class ProductDetail(DetailView):
 
     def get_object(self):
         category_slug = self.kwargs['category_slug']
-        product_id = self.kwargs['pk']
-        return get_object_or_404(Product, pk=product_id, category__slug=category_slug)
+        product_slug = self.kwargs['slug']
+        return get_object_or_404(Product, slug=product_slug, category__slug=category_slug)
